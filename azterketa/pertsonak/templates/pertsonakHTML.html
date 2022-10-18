@@ -1,0 +1,16 @@
+<h1>pertsonak</h1>
+
+<table border="1">
+{% for x in mypertsonak %}
+<tr>
+<td><a href="updatePer/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.izena }}</td>
+<td>{{ x.abizena }}</td>
+<td><a href="deletePer/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+    <a href="addPer/">Add Pertsonak</a>
+</p>

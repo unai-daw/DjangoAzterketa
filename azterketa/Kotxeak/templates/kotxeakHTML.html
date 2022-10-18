@@ -1,0 +1,20 @@
+<h1>KOTXEAK</h1>
+
+<table border="1">
+{% for x in mykotxea %}
+<tr>
+<td><a href="updateCoche/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.marca }}</td>
+<td>{{ x.modelo }}</td>
+<td>{{ x.matricula }}</td>
+<td>{{ x.precioHora }}</td>
+<td>{{ x.alokatzeData }}</td>
+<td><a href="deleteCoche/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+    <a href="addCoche/">AÑADIR COCHE</a><br><br>
+    <a href="bistaratu/">KOTXEAREN ESTATU BISTARATU</a>
+</p>

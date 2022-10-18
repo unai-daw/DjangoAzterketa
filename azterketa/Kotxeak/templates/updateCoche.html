@@ -1,0 +1,21 @@
+<h1>Update member</h1>
+
+<form action="updaterecordCoche/{{ mykotxea.id }}" method="post">
+{% csrf_token %}
+marca:<br>
+<input name="marca" value="{{ mykotxea.marca }}">
+<br><br>
+modelo:<br>
+<input name="modelo" value="{{ mykotxea.modelo }}">
+<br><br>
+matricula:<br>
+<input name="matricula" value="{{ mykotxea.matricula }}">
+<br><br>
+precio por hora:<br>
+<input name="precioHora" value="{{ mykotxea.precioHora }}">
+<br><br>
+alokairu data:<br>
+<input name="alokatzeData" value="{{ mykotxea.alokatzeData }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>

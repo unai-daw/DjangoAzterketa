@@ -1,0 +1,21 @@
+<h1>AÑADIR COCHE</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+Marca:<br>
+<input name="marca">
+<br><br>
+Modelo:<br>
+<input name="modelo">
+<br><br>
+Matricula:<br>
+<input name="matricula">
+<br><br>
+precioHora:<br>
+<input name="precioHora">
+<br><br>
+Alokatze Data:<br>
+<input name="alokatzeData">
+<br><br>
+<input type="submit" value="Submit">
+</form>

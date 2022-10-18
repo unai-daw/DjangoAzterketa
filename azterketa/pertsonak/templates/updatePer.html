@@ -1,0 +1,12 @@
+<h1>Update</h1>
+
+<form action="updaterecordPer/{{ mypertsonak.id }}" method="post">
+{% csrf_token %}
+Izena:<br>
+<input name="izena" value="{{ mypertsonak.izena }}">
+<br><br>
+Abizena:<br>
+<input name="abizena" value="{{ mypertsonak.abizena }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
